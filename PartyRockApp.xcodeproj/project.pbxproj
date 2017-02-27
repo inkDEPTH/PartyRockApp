@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		59CA9F111E642DF300BD7D54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CA9F101E642DF300BD7D54 /* AppDelegate.swift */; };
-		59CA9F131E642DF300BD7D54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CA9F121E642DF300BD7D54 /* ViewController.swift */; };
+		59CA9F131E642DF300BD7D54 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CA9F121E642DF300BD7D54 /* MainVC.swift */; };
 		59CA9F161E642DF300BD7D54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CA9F141E642DF300BD7D54 /* Main.storyboard */; };
 		59CA9F181E642DF300BD7D54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59CA9F171E642DF300BD7D54 /* Assets.xcassets */; };
 		59CA9F1B1E642DF300BD7D54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CA9F191E642DF300BD7D54 /* LaunchScreen.storyboard */; };
+		59CA9F261E64343900BD7D54 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59CA9F251E64343900BD7D54 /* still time.ttf */; };
+		59CA9F291E6435E400BD7D54 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CA9F281E6435E400BD7D54 /* VideoVC.swift */; };
+		59CA9F2B1E6450EB00BD7D54 /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CA9F2A1E6450EB00BD7D54 /* PartyCell.swift */; };
+		59CA9F2D1E6453A400BD7D54 /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CA9F2C1E6453A400BD7D54 /* PartyRock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		59CA9F0D1E642DF300BD7D54 /* PartyRockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyRockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CA9F101E642DF300BD7D54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		59CA9F121E642DF300BD7D54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59CA9F121E642DF300BD7D54 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		59CA9F151E642DF300BD7D54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59CA9F171E642DF300BD7D54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59CA9F1A1E642DF300BD7D54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59CA9F1C1E642DF300BD7D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59CA9F251E64343900BD7D54 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
+		59CA9F281E6435E400BD7D54 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		59CA9F2A1E6450EB00BD7D54 /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
+		59CA9F2C1E6453A400BD7D54 /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		59CA9F0F1E642DF300BD7D54 /* PartyRockApp */ = {
 			isa = PBXGroup;
 			children = (
+				59CA9F271E64344D00BD7D54 /* Files */,
+				59CA9F241E642F1F00BD7D54 /* Model */,
+				59CA9F231E642F1600BD7D54 /* View */,
+				59CA9F221E642EFB00BD7D54 /* Controller */,
 				59CA9F101E642DF300BD7D54 /* AppDelegate.swift */,
-				59CA9F121E642DF300BD7D54 /* ViewController.swift */,
 				59CA9F141E642DF300BD7D54 /* Main.storyboard */,
-				59CA9F171E642DF300BD7D54 /* Assets.xcassets */,
 				59CA9F191E642DF300BD7D54 /* LaunchScreen.storyboard */,
+				59CA9F171E642DF300BD7D54 /* Assets.xcassets */,
 				59CA9F1C1E642DF300BD7D54 /* Info.plist */,
 			);
 			path = PartyRockApp;
+			sourceTree = "<group>";
+		};
+		59CA9F221E642EFB00BD7D54 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				59CA9F121E642DF300BD7D54 /* MainVC.swift */,
+				59CA9F281E6435E400BD7D54 /* VideoVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		59CA9F231E642F1600BD7D54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59CA9F2A1E6450EB00BD7D54 /* PartyCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		59CA9F241E642F1F00BD7D54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59CA9F2C1E6453A400BD7D54 /* PartyRock.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		59CA9F271E64344D00BD7D54 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				59CA9F251E64343900BD7D54 /* still time.ttf */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59CA9F1B1E642DF300BD7D54 /* LaunchScreen.storyboard in Resources */,
+				59CA9F261E64343900BD7D54 /* still time.ttf in Resources */,
 				59CA9F181E642DF300BD7D54 /* Assets.xcassets in Resources */,
 				59CA9F161E642DF300BD7D54 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59CA9F131E642DF300BD7D54 /* ViewController.swift in Sources */,
+				59CA9F291E6435E400BD7D54 /* VideoVC.swift in Sources */,
+				59CA9F2D1E6453A400BD7D54 /* PartyRock.swift in Sources */,
+				59CA9F131E642DF300BD7D54 /* MainVC.swift in Sources */,
+				59CA9F2B1E6450EB00BD7D54 /* PartyCell.swift in Sources */,
 				59CA9F111E642DF300BD7D54 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
